@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Caleta | Enlaces</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg: #0b0b0b; --card-bg: #1a1a1a; --text-main: #ffffff; --text-dim: #a0a0a0; --accent: #ffffff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: var(--bg); color: var(--text-main); display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+        .wrapper { width: 100%; max-width: 400px; text-align: center; }
+        .profile-pic { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 2px solid var(--card-bg); padding: 4px; }
+        .title { font-size: 1.5rem; font-weight: 600; margin-bottom: 4px; }
+        .location { font-size: 0.85rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px; display: block; }
+        .description { font-size: 0.95rem; color: var(--text-dim); margin-bottom: 35px; line-height: 1.5; }
+        .links { display: flex; flex-direction: column; gap: 14px; }
+        .link-item { display: block; padding: 16px; text-decoration: none; color: var(--text-main); background-color: var(--card-bg); border-radius: 12px; font-weight: 500; transition: all 0.25s ease; border: 1px solid rgba(255, 255, 255, 0.05); }
+        .link-item:hover { background-color: var(--accent); color: #000; transform: translateY(-3px); }
+        
+        .switch-btn {
+            display: inline-block;
+            margin-top: 30px;
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.85rem;
+            padding: 8px 16px;
+            border: 1px dashed var(--text-dim);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .switch-btn:hover {
+            color: var(--text-main);
+            border-color: var(--text-main);
+            background: rgba(255,255,255,0.05);
+        }
+
+        footer { margin-top: 40px; font-size: 0.7rem; color: var(--text-dim); letter-spacing: 2px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <img src="logo.png" alt="Logo" class="profile-pic">
+        <h1 class="title">Kathy Comercial</h1>
+        <span class="location">Sucursal La Caleta</span>
+        <p class="description">Tienda de Muebles y Electrodomesticos.</p>
+        
+        <div class="links">
+            <a href="tel:18095498781" class="link-item">Tel: (809) 549-8781</a>
+            <a href="https://wa.me/18097081759" class="link-item" target="_blank">WhatsApp</a>
+            <a href="https://www.instagram.com/kathycomercial/" class="link-item" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@kathycomercial" target="_blank" class="link-item">TikTok</a>
+        </div>
+
+        <a href="andres.html" class="switch-btn">Ir a Sucursal Andrés →</a>
+
+        <footer>&copy; 2026 Todos los derechos reservados.</footer>
+    </div>
+</body>
+</html>
