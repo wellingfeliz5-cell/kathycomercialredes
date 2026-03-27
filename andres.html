@@ -15,8 +15,13 @@
         .location { font-size: 0.85rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px; display: block; }
         .description { font-size: 0.95rem; color: var(--text-dim); margin-bottom: 35px; line-height: 1.5; }
         .links { display: flex; flex-direction: column; gap: 14px; }
-        .link-item { display: block; padding: 16px; text-decoration: none; color: var(--text-main); background-color: var(--card-bg); border-radius: 12px; font-weight: 500; transition: all 0.25s ease; border: 1px solid rgba(255, 255, 255, 0.05); }
-        .link-item:hover { background-color: var(--accent); color: #000; transform: translateY(-3px); }
+        .link-item { display: block; padding: 16px; text-decoration: none; color: var(--text-main); background-color: var(--card-bg); border-radius: 12px; font-weight: 500; transition: all 0.25s ease; border: 1px solid rgba(255, 255, 255, 0.05); -webkit-tap-highlight-color: transparent; }
+        
+        @media (hover: hover) {
+            .link-item:hover { background-color: var(--accent); color: #000; transform: translateY(-3px); }
+        }
+        .link-item:active { transform: scale(0.98); background-color: rgba(255,255,255,0.1); }
+
         footer { margin-top: 50px; font-size: 0.7rem; color: var(--text-dim); letter-spacing: 2px; text-transform: uppercase; }
     </style>
 </head>
@@ -31,8 +36,9 @@
             <a href="https://wa.me/18093261522" class="link-item" target="_blank">WhatsApp</a>
             <a href="https://www.instagram.com/kathycomercial/" class="link-item" target="_blank">Instagram</a>
             <a href="https://www.tiktok.com/@kathycomercial" target="_blank" class="link-item">TikTok</a>
+            <a href="https://maps.app.goo.gl/ExnpkzwbtetdJz3k7" class="link-item" target="_blank">📍 Dirección</a>
         </div>
-        <footer>&copy; 2026 Todos los derechos reservados.</footer>
+        <footer>© 2026 Todos los derechos reservados.</footer>
     </div>
 </body>
 </html>
