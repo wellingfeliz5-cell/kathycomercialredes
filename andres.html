@@ -3,42 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrés | Enlaces</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Kathy Comercial - Andrés</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --bg: #0b0b0b; --card-bg: #1a1a1a; --text-main: #ffffff; --text-dim: #a0a0a0; --accent: #ffffff; }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-        body { background-color: var(--bg); color: var(--text-main); display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
-        .wrapper { width: 100%; max-width: 400px; text-align: center; }
-        .profile-pic { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 2px solid var(--card-bg); padding: 4px; }
-        .title { font-size: 1.5rem; font-weight: 600; margin-bottom: 4px; }
-        .location { font-size: 0.85rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px; display: block; }
-        .description { font-size: 0.95rem; color: var(--text-dim); margin-bottom: 35px; line-height: 1.5; }
-        .links { display: flex; flex-direction: column; gap: 14px; }
-        .link-item { display: block; padding: 16px; text-decoration: none; color: var(--text-main); background-color: var(--card-bg); border-radius: 12px; font-weight: 500; transition: all 0.25s ease; border: 1px solid rgba(255, 255, 255, 0.05); -webkit-tap-highlight-color: transparent; }
-        
-        @media (hover: hover) {
-            .link-item:hover { background-color: var(--accent); color: #000; transform: translateY(-3px); }
+        :root {
+            --primary-color: #3b82f6;
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
         }
-        .link-item:active { transform: scale(0.98); background-color: rgba(255,255,255,0.1); }
 
-        footer { margin-top: 50px; font-size: 0.7rem; color: var(--text-dim); letter-spacing: 2px; text-transform: uppercase; }
+        /* El resto de los estilos se mantienen idénticos al anterior por consistencia visual */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            width: 100%;
+            max-width: 400px;
+            padding: 40px 20px;
+            border-radius: 24px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid var(--primary-color);
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .link-item {
+            background-color: #334155;
+            color: #fff;
+            padding: 16px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: block;
+            border: 1px solid transparent;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .link-item:hover {
+            background-color: #475569;
+            transform: translateY(-2px);
+            border-color: var(--primary-color);
+        }
+
+        .link-item:active {
+            background-color: #1e293b;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #64748b;
+        }
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <img src="logo.png" alt="Logo" class="profile-pic">
-        <h1 class="title">Kathy Comercial</h1>
-        <span class="location">Sucursal Andrés</span>
-        <p class="description">Tienda de Muebles y Electrodomesticos.</p>
+    <div class="container">
+        <img src="https://i.ibb.co/6R0D6S2/logo-kathy.png" alt="Kathy Comercial" class="profile-img">
+        <h1>Kathy Comercial</h1>
+        <p class="subtitle">Andrés, Boca Chica</p>
+        
         <div class="links">
-            <a href="tel:18095235412" class="link-item">Tel: (809) 523-5412</a>
-            <a href="https://wa.me/18093261522" class="link-item" target="_blank">WhatsApp</a>
-            <a href="https://www.instagram.com/kathycomercial/" class="link-item" target="_blank">Instagram</a>
-           <a href="https://www.tiktok.com/@kathycomercial" class="link-item" target="_blank">TikTok</a>
-            <a href="https://maps.app.goo.gl/ExnpkzwbtetdJz3k7" class="link-item" target="_blank">📍 Dirección</a>
+            <a href="tel:18095493033" class="link-item">Tel: (809) 549-3033</a>
+            <a href="https://wa.me/18292850381" class="link-item" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://www.instagram.com/kathycomercial/" class="link-item" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.tiktok.com/@kathycomercial" class="link-item" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://maps.app.goo.gl/9Z7Z4m6z2S1M3uL67" class="link-item" target="_blank" rel="noopener">📍 Dirección</a>
         </div>
-        <footer>© 2026 Todos los derechos reservados.</footer>
+
+        <div class="footer">
+            © 2024 Kathy Comercial. Todos los derechos reservados.
+        </div>
     </div>
 </body>
 </html>
